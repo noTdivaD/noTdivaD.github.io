@@ -1,4 +1,4 @@
-/* Green ethereal theme inspired by Wuthering Waves / Genshin */
+/* Minimalist Persona 3 inspired green-ethereal theme */
 
 :root {
     --green-light: #a4f9c8;
@@ -6,6 +6,13 @@
     --green-dark: #065f46;
     --white: #ffffff;
     --shadow: rgba(0,0,0,0.25);
+    --bg-opacity: 0.85;
+}
+
+/* Global styles */
+* {
+    box-sizing: border-box;
+    transition: all 0.3s ease;
 }
 
 body {
@@ -13,43 +20,86 @@ body {
     background: linear-gradient(135deg, #dfffe8, #b6f1d5 50%, #065f46 100%);
     color: var(--green-dark);
     margin: 0;
-    padding: 2rem;
+    padding: 0;
     line-height: 1.6;
 }
+
+/* Centered content with max-width */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+/* Sticky navigation bar */
+.navbar {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, var(--bg-opacity));
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    box-shadow: 0 4px 10px var(--shadow);
+    z-index: 1000;
+}
+
+    .navbar a {
+        color: var(--green-dark);
+        font-weight: bold;
+        text-decoration: none;
+        margin: 0 1rem;
+        position: relative;
+    }
+
+        .navbar a::after {
+            content: '';
+            display: block;
+            height: 2px;
+            width: 0;
+            background: var(--green-light);
+            transition: width 0.3s ease;
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+        }
+
+        .navbar a:hover::after {
+            width: 100%;
+        }
 
 /* Headings */
 h1, h2, h3 {
     color: var(--green-dark);
     text-shadow: 1px 1px 0 var(--green-light), -1px -1px 0 var(--white);
     letter-spacing: 1.5px;
+    margin-top: 2rem;
 }
 
 /* Highlight effect */
 .highlight {
     background: var(--green-mid);
     color: var(--white);
-    padding: 0 0.2rem;
+    padding: 0 0.3rem;
     border-radius: 4px;
-    box-shadow: 0 4px 6px var(--shadow);
     font-weight: bold;
 }
 
-/* Floating cards */
-.card {
-    background: var(--white);
-    color: var(--green-dark);
-    padding: 2rem;
-    margin: 2rem 0;
+/* Sections (connected content) */
+.section {
+    background: rgba(255, 255, 255, var(--bg-opacity));
+    padding: 2rem 2rem;
+    margin: 1.5rem 0;
     border-radius: 12px;
-    box-shadow: 0 15px 25px var(--shadow);
-    position: relative;
-    overflow: hidden;
+    box-shadow: 0 10px 20px var(--shadow);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-    .card.floating:hover {
-        transform: translateY(-10px) rotate(-1deg);
-        box-shadow: 0 25px 35px var(--shadow);
+    .section:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 20px 30px var(--shadow);
     }
 
 /* Buttons */
@@ -64,7 +114,7 @@ h1, h2, h3 {
     font-weight: bold;
     text-transform: uppercase;
     box-shadow: 0 6px 10px var(--shadow);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
 }
 
     .button:hover {
@@ -77,27 +127,40 @@ a {
     color: var(--green-dark);
     font-weight: bold;
     text-decoration: underline dotted;
+    cursor: pointer;
+    position: relative;
 }
 
     a:hover {
         color: var(--green-light);
+        transform: translateY(-2px);
     }
 
-/* Subtle floating animation for ethereal effect */
+/* Floating subtle animations */
 @keyframes float {
-    0% {
+    0%, 100% {
         transform: translateY(0px);
     }
 
     50% {
         transform: translateY(-6px);
     }
-
-    100% {
-        transform: translateY(0px);
-    }
 }
 
-.card.floating {
+.floating {
     animation: float 6s ease-in-out infinite;
 }
+
+/* Persona-like accent lines */
+.accent-line {
+    width: 50px;
+    height: 4px;
+    background: var(--green-mid);
+    margin: 1rem 0;
+    border-radius: 2px;
+    transition: width 0.3s ease;
+}
+
+    .accent-line:hover {
+        width: 100px;
+    }
