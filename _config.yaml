@@ -66,7 +66,7 @@ kramdown:
   input: GFM
   hard_wrap: false
 
-# === Exclusions (don’t publish these) ===
+# === Exclusions ===
 exclude:
   - README.md
   - Gemfile
@@ -74,3 +74,10 @@ exclude:
   - node_modules
   - package.json
   - package-lock.json
+
+# === CSS ===
+sass:
+  style: compressed
+
+include:
+  - assets/css
