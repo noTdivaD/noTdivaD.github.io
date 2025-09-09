@@ -1,3 +1,76 @@
-theme: jekyll-theme-minimal
-title: David Ton's Homepage
-description: Test
+﻿# === Site Info ===
+title: "David Ton | Unity 3D & VR Developer"
+description: "Portfolio showcasing Unity 3D/VR projects, game prototypes, and immersive experiences."
+url: "https://noTdivaD.github.io"   # Replace with your GitHub Pages URL
+lang: en
+
+# === Theme ===
+remote_theme: pages-themes/cayman@v0.2.0
+show_downloads: false
+
+# === Author Info ===
+author: David Ton
+email: davidton2434@gmail.com
+github_username: noTdivaD
+linkedin_username: David Ton
+
+# === Navigation ===
+header_pages:
+  - index.md
+  - about.md
+  - projects.md
+  - blog.md
+  - contact.md
+
+# === Plugins ===
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-paginate
+
+# === Pagination ===
+paginate: 5
+paginate_path: "/blog/page:num/"
+
+# === Collections ===
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name/
+
+# === Defaults ===
+defaults:
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: project
+      author: David Ton
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: post
+      author: David Ton
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: page
+
+# === Markdown & Syntax Highlighting ===
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  hard_wrap: false
+
+# === Exclusions (don’t publish these) ===
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - package.json
+  - package-lock.json
