@@ -3,40 +3,39 @@ layout: default
 title: Home
 ---
 
-# 👋 Welcome to My 3D & VR Game Development Space
+# 🌿 Welcome to My 3D & VR Game Dev Realm
 
 <div class="card">
   <h2>About Me</h2>
   <p>
-    I’m <strong>[Your Name]</strong>, a developer focused on <strong>3D & VR games</strong>.  
-    My work blends <span class="highlight">gameplay innovation</span>, <span class="highlight">immersive design</span>,  
-    and <span class="highlight">stylized aesthetics</span>.
+    I’m <strong>[Your Name]</strong>, a developer crafting immersive <strong>3D & VR experiences</strong>.  
+    My focus is on creating <span class="highlight">living worlds</span>, <span class="highlight">dynamic gameplay</span>, and <span class="highlight">magical visual aesthetics</span>.
   </p>
 </div>
 
-<div class="card">
-  <h2>🚀 Current Projects</h2>
+<div class="card floating">
+  <h2>✨ Current Projects</h2>
   <ul>
-    <li><strong>[Project 1]</strong> – VR puzzle-adventure with physics-based mechanics.</li>
-    <li><strong>[Project 2]</strong> – Fast-paced 3D action with procedural levels.</li>
-    <li><strong>[Project 3]</strong> – Experimental XR locomotion prototypes.</li>
+    <li><strong>[Project 1]</strong> – VR adventure with physics-based puzzle mechanics.</li>
+    <li><strong>[Project 2]</strong> – 3D action with procedural environments and fluid combat.</li>
+    <li><strong>[Project 3]</strong> – Experimental XR prototypes exploring locomotion & interactivity.</li>
   </ul>
-  <a href="./projects.html" class="button">See More</a>
+  <a href="./projects.html" class="button">Explore Projects</a>
 </div>
 
-<div class="card">
-  <h2>🛠 Tech Stack</h2>
+<div class="card floating">
+  <h2>🛠 Tech & Tools</h2>
   <p>
-    Unity • Unreal Engine • C# • C++ • Blender • Substance Painter •  
-    GitHub Actions • VR hardware (Quest, Vive, Index)
+    Unity • Unreal Engine • C# • C++ • Blender • Substance Painter • GitHub Actions •  
+    VR devices (Quest, Vive, Index)
   </p>
 </div>
 
-<div class="card">
-  <h2>🤝 Get in Touch</h2>
+<div class="card floating">
+  <h2>🤝 Connect With Me</h2>
   <p>
     💼 <a href="#">LinkedIn</a>  
-    🐦 <a href="#">Twitter / X</a>  
+    🐦 <a href="#">Twitter</a>  
     🎮 <a href="#">Itch.io</a>  
     ✉️ <a href="mailto:youremail@example.com">Email Me</a>
   </p>
