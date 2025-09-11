@@ -23,10 +23,16 @@ title: Accueil
 
 <div class="card floating">
   <h2>🛠 Tech & Tools</h2>
-  <p>
-    Unity • Unreal Engine • C# • C++ • Blender • Substance Painter • GitHub Actions •  
-    VR devices (Quest, Vive, Index)
-  </p>
+  <tr>
+    <td>Unity</td>
+    <td>Java</td> 
+    <td>C++</td> 
+    <td>C#</td> 
+    <td>C</td> 
+    <td>HTML/CSS</td> 
+    <td>Python</td> 
+    <td>Agile</td> 
+  </tr>
 </div>
 
 <div class="card floating">
