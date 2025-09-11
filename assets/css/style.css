@@ -20,7 +20,8 @@ body::before {
     left: 0;
     right: 0;
     bottom: 0;
-    background: url('../images/VoronoiBG.png') center no-repeat;
+    background: url('/assets/images/VoronoiBG.png') center no-repeat;
+    background-size: cover;
     opacity: 0.5;
     z-index: -1;
 }
@@ -31,7 +32,6 @@ h2{
     color: var(--mainColor);
     text-shadow: 2px 2px 0 var(--mainShading), -3px -3px 0 var(--white);
     letter-spacing: 2px;
-/*    animation: pop 0.6s ease-out forwards;*/
 }
 
 /* Highlight */
@@ -88,16 +88,3 @@ a {
         background: var(--mainColor);
         transition: all 0.2s ease-in-out;
     }
-
-/* Pop animation */
-@keyframes pop {
-    0% {
-        transform: scale(0.8) rotate(-5deg);
-        opacity: 0;
-    }
-
-    100% {
-        transform: scale(1) rotate(0);
-        opacity: 1;
-    }
-}
