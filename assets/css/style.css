@@ -117,72 +117,66 @@ a {
     vertical-align: middle;
 }
 
-/* HEADER */
 .site-header {
-    width: 60%;
-    margin: 2rem auto;
-    background: var(--white);
-    color: var(--mainShading);
-    padding: 1.5rem;
-    border: 4px solid var(--mainShading);
-    box-shadow: 10px 10px 0 var(--mainColor);
-    transform: rotate(-1deg);
+    background: var(--mainColor);
+    color: var(--white);
+    border-bottom: 4px solid var(--mainShading);
+    box-shadow: 0 8px 0 var(--mainShading);
+    padding: 1.5rem 0;
     text-align: center;
+    margin-bottom: 2rem;
 }
 
     .site-header h1 {
         margin: 0;
-        font-size: 2rem;
-        position: relative;
+        font-size: 2.2rem;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        -webkit-text-stroke: 2px var(--mainShading);
+        display: inline-block;
+        padding: 0.3rem 0.6rem;
+        background: var(--white);
+        color: var(--mainShading);
+        border: 3px solid var(--mainShading);
+        box-shadow: 5px 5px 0 var(--mainShading);
     }
-
-        .site-header h1::before {
-            content: "";
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            width: 160%;
-            height: 150%;
-            background: var(--mainColor);
-            border: 3px solid var(--mainShading);
-            transform: translate(-50%, -50%) skew(-15deg);
-            z-index: -1;
-            box-shadow: 5px 5px 0 var(--mainShading);
-        }
 
     .site-header nav ul {
         list-style: none;
         padding: 0;
+        margin: 1rem 0 0 0;
         display: flex;
         justify-content: center;
-        gap: 1rem;
-        margin-top: 1rem;
+        gap: 1.5rem;
     }
 
         .site-header nav ul li a {
-            color: var(--mainShading);
-            text-decoration: none;
+            color: var(--white);
             font-weight: bold;
-            border-bottom: 2px solid var(--mainColor);
-            padding: 0.2rem;
+            text-decoration: none;
+            background: var(--mainShading);
+            padding: 0.4rem 0.8rem;
+            border: 3px solid var(--white);
+            box-shadow: 3px 3px 0 var(--mainShading);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
         }
 
             .site-header nav ul li a:hover {
-                color: var(--white);
-                background: var(--mainColor);
+                background: var(--white);
+                color: var(--mainShading);
+                transform: translate(-3px, -3px);
+                box-shadow: 6px 6px 0 var(--mainShading);
             }
 
 /* FOOTER */
 .site-footer {
-    width: 60%;
-    margin: 4rem auto 2rem auto;
-    background: var(--white);
-    color: var(--mainShading);
-    padding: 1.5rem;
-    border: 4px solid var(--mainShading);
-    box-shadow: 10px 10px 0 var(--mainColor);
-    transform: rotate(-1deg);
+    background: var(--mainColor);
+    color: var(--white);
+    border-top: 4px solid var(--mainShading);
+    box-shadow: 0 -8px 0 var(--mainShading);
     text-align: center;
+    padding: 1.5rem;
+    margin-top: 3rem;
 }
 
     .site-footer p {
@@ -190,14 +184,18 @@ a {
     }
 
     .site-footer a {
-        color: var(--mainShading);
+        color: var(--white);
         font-weight: bold;
         text-decoration: none;
-        border-bottom: 2px solid var(--mainColor);
-        padding: 0.1rem;
+        border: 2px solid var(--white);
+        padding: 0.2rem 0.5rem;
+        box-shadow: 3px 3px 0 var(--mainShading);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
 
         .site-footer a:hover {
-            color: var(--white);
-            background: var(--mainColor);
+            background: var(--white);
+            color: var(--mainShading);
+            transform: translate(-2px, -2px);
+            box-shadow: 5px 5px 0 var(--mainShading);
         }
