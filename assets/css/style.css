@@ -13,25 +13,26 @@ body {
     line-height: 1.6;
 }
 
-body::before {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: url('/assets/images/VoronoiBG.png') repeat;
-    background-size: auto;
-    opacity: 0.1;
-    z-index: -1;
-}
+    body::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: url('/assets/images/VoronoiBG.png') repeat;
+        background-size: auto;
+        opacity: 0.1;
+        z-index: -1;
+    }
 
 /* Headings */
-h2{
+h2 {
     text-transform: uppercase;
-    color: var(--mainColor);
-    text-shadow: 2px 2px 0 var(--mainShading), -3px -3px 0 var(--white);
+    color: var(--white);
+    -webkit-text-stroke: 5px black;
     letter-spacing: 2px;
+    paint-order: stroke fill;
 }
 
 /* Highlight */
@@ -55,6 +56,26 @@ h2{
     box-shadow: 10px 10px 0 var(--mainColor);
     transform: rotate(-1deg);
 }
+
+    .card h2 {
+        position: relative;
+        display: inline-block;
+        z-index: 1;
+    }
+
+        .card h2::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 160%;
+            height: 150%;
+            background: var(--mainColor);
+            border: 3px solid var(--mainShading);
+            transform: translate(-50%, -50%) skew(-15deg);
+            z-index: -1;
+            box-shadow: 5px 5px 0 var(--mainShading);
+        }
 
 /* Buttons */
 .button {
