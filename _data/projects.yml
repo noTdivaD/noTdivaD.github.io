@@ -1,0 +1,61 @@
+﻿- title: "Grandma Throwing Apocalypse 6"
+  icon: "🎮"
+  description: >
+    Jeu 3D où l'on contrôle une grand-mère propulsée en enfer.  
+    Travail sur les interfaces et le changement de scènes.
+  duration: "1 semaine"
+  team:
+    - name: "Pataki Nandor"
+      link: "https://www.linkedin.com/in/pataki-nandor-9b809735b/"
+    - name: "Mohammad Jawad"
+      link: "https://www.linkedin.com/in/mohammad-jawad-07ab93259/"
+  media:
+    - type: "image"
+      src: "/assets/images/grandma-screenshot.png"
+    - type: "video"
+      src: "/assets/videos/grandma-demo.mp4"
+  download: "/downloads/grandma-throwing.zip"
+
+- title: "Shop Simulator"
+  icon: "🏪"
+  description: >
+    Jeu de gestion de commerce. Développement de la logique clients,
+    du système de vente et de la ville.
+  duration: "3 semaines"
+  team:
+    - name: "Niels Carré"
+      link: "https://www.linkedin.com/in/niels-carre-360907333/"
+    - name: "Layla El Bakali Taheri"
+      link: "https://www.linkedin.com/in/layla-el-bakali-taheri-59ba4435a/"
+  media:
+    - type: "image"
+      src: "/assets/images/shop-sim-1.png"
+    - type: "video"
+      src: "/assets/videos/shop-sim.mp4"
+  download: "/downloads/shop-simulator.zip"
+
+- title: "CinemachineProject"
+  icon: "🎥"
+  description: >
+    Démonstration 3D sur les caméras, shaders et instanciations de préfabs.  
+    Projet court orienté technique.
+  duration: "2 jours"
+  team: []
+  media:
+    - type: "image"
+      src: "/assets/images/cinemachine-demo.png"
+  download: "/downloads/cinemachine-project.zip"
+
+- title: "The Pale Voyage"
+  icon: "🌌"
+  description: >
+    Prototype expérimental en 3D & VR (Unity XR).  
+    Travail sur l’implémentation VR, shaders HLSL, LOD et pooling.
+  duration: "2 semaines"
+  team: []
+  media:
+    - type: "image"
+      src: "/assets/images/pale-voyage-1.png"
+    - type: "video"
+      src: "/assets/videos/pale-voyage-demo.mp4"
+  download: "/downloads/the-pale-voyage.zip"
