@@ -10,8 +10,14 @@
     - name: "Mohammad Jawad"
       link: "https://www.linkedin.com/in/mohammad-jawad-07ab93259/"
   media:
-    - type: "image"
-      src: "/assets/images/grandma-screenshot.png"
+    - type: "slideshow"
+      src:
+        - "/assets/images/GTA6/GTA6_1.png"
+        - "/assets/images/GTA6/GTA6_2.png"
+        - "/assets/images/GTA6/GTA6_3.png"
+        - "/assets/images/GTA6/GTA6_4.png"
+        - "/assets/images/GTA6/GTA6_5.png"
+        - "/assets/images/GTA6/GTA6_6.png"
     - type: "video"
       src: "/assets/videos/grandma-demo.mp4"
   download: "/downloads/grandma-throwing.zip"
