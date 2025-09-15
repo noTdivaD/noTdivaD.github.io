@@ -18,8 +18,21 @@ title: Projets
       <h3>{{ project.icon }} {{ project.title }}</h3>
       <div class="showcase-media">
         {% for media in project.media %}
-          {% if media.type == "image" %}
-            <img src="{{ media.src }}" alt="{{ project.title }} Screenshot">
+          {% elsif media.type == "slideshow" %}
+          <div class="slideshow">
+            {% for img in media.src %}
+              <div class="slide fade">
+                <img src="{{ img }}" alt="{{ project.title }} Screenshot">
+              </div>
+            {% endfor %}
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+          </div>
+          <div class="dots">
+            {% for img in media.src %}
+              <span class="dot" onclick="currentSlide({{ forloop.index }})"></span>
+            {% endfor %}
+          </div>
           {% elsif media.type == "video" %}
             <video controls>
               <source src="{{ media.src }}" type="video/mp4">
