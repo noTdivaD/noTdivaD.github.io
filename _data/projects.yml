@@ -46,7 +46,8 @@
     Démonstration 3D sur les caméras, shaders et instanciations de préfabs.  
     Projet court orienté technique.
   duration: "2 jours"
-  team: - name: "Projet développé seul"
+  team:
+    - name: "Projet développé seul"
   media:
     - type: "slideshow"
       src:
@@ -60,7 +61,8 @@
     Prototype expérimental en 3D & VR (Unity XR).  
     Travail sur l’implémentation VR, shaders HLSL, LOD et pooling.
   duration: "2 semaines"
-  team: - name: "Projet développé seul"
+  team:
+    - name: "Projet développé seul"
   media:
     - type: "slideshow"
       src:
