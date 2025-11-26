@@ -12,17 +12,17 @@ title: Accueil
 <div class="slideshow-container">
 
   <div class="slide fade">
-    <img src="/assets/images/grandma.jpg" style="width:100%">
+    <img src="/assets/images/GTA6/GTA6_1.png" style="width:100%">
     <div class="text">Grandma Throwing Apocalypse 6</div>
   </div>
 
   <div class="slide fade">
-    <img src="/assets/images/cinemachine.jpg" style="width:100%">
+    <img src="/assets/images/CinemachineProject/CinePro_1.png" style="width:100%">
     <div class="text">CinemachineProject</div>
   </div>
 
-  <div class="slide fade">
-    <img src="/assets/images/shop.jpg" style="width:100%">
+  <div class="slide fade">  
+    <img src="/assets/images/ShopSimulator/ShopSim_4.png" style="width:100%">
     <div class="text">Shop Simulator</div>
   </div>
 

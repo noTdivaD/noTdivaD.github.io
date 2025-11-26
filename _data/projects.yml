@@ -18,8 +18,6 @@
         - "/assets/images/GTA6/GTA6_4.png"
         - "/assets/images/GTA6/GTA6_5.png"
         - "/assets/images/GTA6/GTA6_6.png"
-    - type: "video"
-      src: "/assets/videos/grandma-demo.mp4"
   download: "/downloads/grandma-throwing.zip"
 
 - title: "Shop Simulator"
@@ -34,10 +32,12 @@
     - name: "Layla El Bakali Taheri"
       link: "https://www.linkedin.com/in/layla-el-bakali-taheri-59ba4435a/"
   media:
-    - type: "image"
-      src: "/assets/images/shop-sim-1.png"
-    - type: "video"
-      src: "/assets/videos/shop-sim.mp4"
+    - type: "slideshow"
+      src:
+      - "/assets/images/ShopSimulator/ShopSim_1.png"
+      - "/assets/images/ShopSimulator/ShopSim_2.png"
+      - "/assets/images/ShopSimulator/ShopSim_3.png"
+      - "/assets/images/ShopSimulator/ShopSim_4.png"
   download: "/downloads/shop-simulator.zip"
 
 - title: "CinemachineProject"
@@ -46,10 +46,12 @@
     Démonstration 3D sur les caméras, shaders et instanciations de préfabs.  
     Projet court orienté technique.
   duration: "2 jours"
-  team: []
+  team: - name: "Projet développé seul"
   media:
-    - type: "image"
-      src: "/assets/images/cinemachine-demo.png"
+    - type: "slideshow"
+      src:
+    - "/assets/images/CinemachineProject/CinePro_1.png"
+    - "/assets/images/CinemachineProject/CinePro_2.png"
   download: "/downloads/cinemachine-project.zip"
 
 - title: "The Pale Voyage"
@@ -58,10 +60,12 @@
     Prototype expérimental en 3D & VR (Unity XR).  
     Travail sur l’implémentation VR, shaders HLSL, LOD et pooling.
   duration: "2 semaines"
-  team: []
+  team: - name: "Projet développé seul"
   media:
-    - type: "image"
-      src: "/assets/images/pale-voyage-1.png"
-    - type: "video"
-      src: "/assets/videos/pale-voyage-demo.mp4"
+    - type: "slideshow"
+      src:
+    - "/assets/images/ThePaleVoyage/TPV_1.png"
+    - "/assets/images/ThePaleVoyage/TPV_2.png"
+    - "/assets/images/ThePaleVoyage/TPV_3.png"
+    - "/assets/images/ThePaleVoyage/TPV_4.png"
   download: "/downloads/the-pale-voyage.zip"
