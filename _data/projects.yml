@@ -23,8 +23,8 @@
 - title: "Shop Simulator"
   icon: "🏪"
   description: >
-    Jeu de gestion de commerce. Développement de la logique clients,
-    du système de vente et de la ville.
+    Jeu de gestion de commerce.  
+    Développement de la logique clients, du système de vente et de la ville.
   duration: "3 semaines"
   team:
     - name: "Niels Carré"
@@ -34,10 +34,10 @@
   media:
     - type: "slideshow"
       src:
-      - "/assets/images/ShopSimulator/ShopSim_1.png"
-      - "/assets/images/ShopSimulator/ShopSim_2.png"
-      - "/assets/images/ShopSimulator/ShopSim_3.png"
-      - "/assets/images/ShopSimulator/ShopSim_4.png"
+        - "/assets/images/ShopSimulator/ShopSim_1.png"
+        - "/assets/images/ShopSimulator/ShopSim_2.png"
+        - "/assets/images/ShopSimulator/ShopSim_3.png"
+        - "/assets/images/ShopSimulator/ShopSim_4.png"
   download: "/downloads/shop-simulator.zip"
 
 - title: "CinemachineProject"
@@ -51,8 +51,8 @@
   media:
     - type: "slideshow"
       src:
-    - "/assets/images/CinemachineProject/CinePro_1.png"
-    - "/assets/images/CinemachineProject/CinePro_2.png"
+        - "/assets/images/CinemachineProject/CinePro_1.png"
+        - "/assets/images/CinemachineProject/CinePro_2.png"
   download: "/downloads/cinemachine-project.zip"
 
 - title: "The Pale Voyage"
@@ -66,8 +66,8 @@
   media:
     - type: "slideshow"
       src:
-    - "/assets/images/ThePaleVoyage/TPV_1.png"
-    - "/assets/images/ThePaleVoyage/TPV_2.png"
-    - "/assets/images/ThePaleVoyage/TPV_3.png"
-    - "/assets/images/ThePaleVoyage/TPV_4.png"
+        - "/assets/images/ThePaleVoyage/TPV_1.png"
+        - "/assets/images/ThePaleVoyage/TPV_2.png"
+        - "/assets/images/ThePaleVoyage/TPV_3.png"
+        - "/assets/images/ThePaleVoyage/TPV_4.png"
   download: "/downloads/the-pale-voyage.zip"

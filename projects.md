@@ -26,32 +26,28 @@ title: Projets
     <div class="showcase-media">
 
       {% for media in project.media %}
-        {% if media.type == "image" %}
-          <img src="{{ media.src }}" alt="{{ project.title }} Screenshot">
+          {% if media.type == "slideshow" %}
 
-        {% elsif media.type == "slideshow" %}
-          <div class="slideshow" data-slideshow="{{ forloop.index0 }}-{{ forloop.parentloop.index0 }}">
-            {% for img in media.src %}
-              <div class="slide fade">
-                <img src="{{ img }}" alt="{{ project.title }} Screenshot">
-              </div>
-            {% endfor %}
-            <a class="prev" onclick="plusSlides(-1, '{{ forloop.index0 }}-{{ forloop.parentloop.index0 }}')">❮</a>
-            <a class="next" onclick="plusSlides(1, '{{ forloop.index0 }}-{{ forloop.parentloop.index0 }}')">❯</a>
-          </div>
+            {% assign ss_id = project.title | slugify | append: "-" | append: forloop.index0 %}
 
-          <div class="dots" data-dots="{{ forloop.index0 }}-{{ forloop.parentloop.index0 }}">
-            {% for img in media.src %}
-              <span class="dot" onclick="currentSlide({{ forloop.index }}, '{{ forloop.index0 }}-{{ forloop.parentloop.index0 }}')"></span>
-            {% endfor %}
-          </div>
+            <div class="slideshow" data-slideshow="{{ ss_id }}">
+              {% for img in media.src %}
+                <div class="slide fade">
+                  <img src="{{ img }}" alt="{{ project.title }} Screenshot">
+                </div>
+              {% endfor %}
+              <a class="prev" onclick="plusSlides(-1, '{{ ss_id }}')">❮</a>
+              <a class="next" onclick="plusSlides(1, '{{ ss_id }}')">❯</a>
+            </div>
 
-        {% elsif media.type == "video" %}
-          <video controls>
-            <source src="{{ media.src }}" type="video/mp4">
-          </video>
-        {% endif %}
-      {% endfor %}
+            <div class="dots" data-dots="{{ ss_id }}">
+              {% for img in media.src %}
+                <span class="dot" onclick="currentSlide({{ forloop.index }}, '{{ ss_id }}')"></span>
+              {% endfor %}
+            </div>
+
+          {% endif %}
+        {% endfor %}
     </div>
 
     <p>
