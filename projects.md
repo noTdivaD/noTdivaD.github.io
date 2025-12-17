@@ -67,46 +67,33 @@ title: Projets
 </div>
 
 <script>
-// Store current slide index per slideshow
-const slideIndex = {};
-
-document.addEventListener("DOMContentLoaded", () => {
-  document.querySelectorAll(".slideshow").forEach(slideshow => {
-    slideshow.dataset.index = 1;
-    showSlides(slideshow, 1);
+  const slideshows = document.querySelectorAll('.slideshow');
+  const slideIndices = {};
+  slideshows.forEach(slideshow => {
+    const ssId = slideshow.getAttribute('data-slideshow');
+    slideIndices[ssId] = 1;
+    showSlides(1, ssId);
   });
-});
-
-function plusSlides(btn, n) {
-  const slideshow = btn.closest(".showcase").querySelector(".slideshow");
-  slideshow.dataset.index = Number(slideshow.dataset.index) + n;
-  showSlides(slideshow);
-}
-
-function currentSlide(dot, n) {
-  const showcase = dot.closest(".showcase");
-  const slideshow = showcase.querySelector(".slideshow");
-  slideshow.dataset.index = n;
-  showSlides(slideshow);
-}
-
-function showSlides(slideshow) {
-  const slides = slideshow.querySelectorAll(".slide");
-  const dots = slideshow
-    .closest(".showcase")
-    .querySelectorAll(".dot");
-
-  let index = Number(slideshow.dataset.index);
-
-  if (index > slides.length) index = 1;
-  if (index < 1) index = slides.length;
-
-  slideshow.dataset.index = index;
-
-  slides.forEach(s => s.style.display = "none");
-  dots.forEach(d => d.classList.remove("active"));
-
-  slides[index - 1].style.display = "block";
-  dots[index - 1].classList.add("active");
-}
-</script>
+  function plusSlides(n, ssId) {
+    showSlides(slideIndices[ssId] += n, ssId);
+  }
+  function currentSlide(n, ssId) {
+    showSlides(slideIndices[ssId] = n, ssId);
+  }
+  function showSlides(n, ssId) {
+    const slideshow = document.querySelector(`.slideshow[data-slideshow="${ssId}"]`);
+    const slides = slideshow.getElementsByClassName("slide");
+    const dotsContainer = document.querySelector(`.dots[data-dots="${ssId}"]`);
+    const dots = dotsContainer.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndices[ssId] = 1}
+    if (n < 1) {slideIndices[ssId] = slides.length}
+    for (let i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (let i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndices[ssId]-1].style.display = "block";
+    dots[slideIndices[ssId]-1].className += " active";
+  }
+  </script>
