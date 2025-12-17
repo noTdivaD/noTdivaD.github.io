@@ -71,35 +71,42 @@ title: Projets
 const slideIndex = {};
 
 document.addEventListener("DOMContentLoaded", () => {
-  document.querySelectorAll(".slideshow").forEach((ss) => {
-    const id = ss.dataset.slideshow;
-    slideIndex[id] = 1;
-    showSlides(1, id);
+  document.querySelectorAll(".slideshow").forEach(slideshow => {
+    slideshow.dataset.index = 1;
+    showSlides(slideshow, 1);
   });
 });
 
-function plusSlides(n, id) {
-  showSlides(slideIndex[id] += n, id);
+function plusSlides(btn, n) {
+  const slideshow = btn.closest(".showcase").querySelector(".slideshow");
+  slideshow.dataset.index = Number(slideshow.dataset.index) + n;
+  showSlides(slideshow);
 }
 
-function currentSlide(n, id) {
-  showSlides(slideIndex[id] = n, id);
+function currentSlide(dot, n) {
+  const showcase = dot.closest(".showcase");
+  const slideshow = showcase.querySelector(".slideshow");
+  slideshow.dataset.index = n;
+  showSlides(slideshow);
 }
 
-function showSlides(n, id) {
-  const slideshow = document.querySelector(`[data-slideshow="${id}"]`);
-  const dotsContainer = document.querySelector(`[data-dots="${id}"]`);
-
+function showSlides(slideshow) {
   const slides = slideshow.querySelectorAll(".slide");
-  const dots = dotsContainer.querySelectorAll(".dot");
+  const dots = slideshow
+    .closest(".showcase")
+    .querySelectorAll(".dot");
 
-  if (n > slides.length) slideIndex[id] = 1;
-  if (n < 1) slideIndex[id] = slides.length;
+  let index = Number(slideshow.dataset.index);
+
+  if (index > slides.length) index = 1;
+  if (index < 1) index = slides.length;
+
+  slideshow.dataset.index = index;
 
   slides.forEach(s => s.style.display = "none");
   dots.forEach(d => d.classList.remove("active"));
 
-  slides[slideIndex[id]-1].style.display = "block";
-  dots[slideIndex[id]-1].classList.add("active");
+  slides[index - 1].style.display = "block";
+  dots[index - 1].classList.add("active");
 }
 </script>
