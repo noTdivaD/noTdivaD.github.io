@@ -53,7 +53,7 @@
       src:
         - "/assets/images/CinemachineProject/CinePro_1.png"
         - "/assets/images/CinemachineProject/CinePro_2.png"
-  download: "/downloads/cinemachine-project.zip"
+  download: "https://github.com/noTdivaD/CinemachineProject/releases/tag/Releases"
 
 - title: "The Pale Voyage"
   icon: "🌌"
