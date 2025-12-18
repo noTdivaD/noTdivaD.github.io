@@ -64,7 +64,6 @@
   team:
     - name: "Projet développé seul"
   media:
-    - type: "image"
-      src:
-        - "/assets/images/ThePaleVoyage/TPV_1.png"
+   - type: "image"
+     src: "/assets/images/ThePaleVoyage/TPV_1.png"
   download: "https://github.com/noTdivaD/ThePaleVoyage/releases/tag/Releases"

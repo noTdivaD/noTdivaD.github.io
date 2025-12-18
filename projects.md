@@ -46,6 +46,12 @@ title: Projets
               {% endfor %}
             </div>
 
+          {% elsif media.type == "image" %}
+
+            <div class="single-image">
+              <img src="{{ media.src }}" alt="{{ project.title }} Screenshot">
+            </div>
+
           {% endif %}
         {% endfor %}
     </div>
