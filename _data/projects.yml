@@ -18,7 +18,7 @@
         - "/assets/images/GTA6/GTA6_4.png"
         - "/assets/images/GTA6/GTA6_5.png"
         - "/assets/images/GTA6/GTA6_6.png"
-  download: "/downloads/grandma-throwing.zip"
+  download: "https://github.com/noTdivaD/GTA6/releases/tag/Releases"
 
 - title: "Shop Simulator"
   icon: "🏪"
@@ -38,7 +38,7 @@
         - "/assets/images/ShopSimulator/ShopSim_2.png"
         - "/assets/images/ShopSimulator/ShopSim_3.png"
         - "/assets/images/ShopSimulator/ShopSim_4.png"
-  download: "/downloads/shop-simulator.zip"
+  download: "https://github.com/noTdivaD/ShopSimulator/releases/tag/Releases"
 
 - title: "CinemachineProject"
   icon: "🎥"
